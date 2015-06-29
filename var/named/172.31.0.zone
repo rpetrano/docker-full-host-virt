@@ -1,0 +1,20 @@
+@                               1D IN SOA   local. root.local. (
+                                    42    ; serial (yyyymmdd##)
+                                    3H    ; refresh
+                                    15M   ; retry
+                                    1W    ; expiry
+                                    1D )  ; minimum ttl
+
+                                1D  IN  NS      localhost.
+
+1                               1D  IN  PTR     host.local.
+2                               1D  IN  PTR     database.local.
+3                               1D  IN  PTR     webserver.local.
+4                               1D  IN  PTR     monitor.local.
+5                               1D  IN  PTR     docs.local.
+6                               1D  IN  PTR     ubuntu.local.
+7                               1D  IN  PTR     tester.local.
+8                               1D  IN  PTR     workers.local.
+9                               1D  IN  PTR     services.local.
+10                              1D  IN  PTR     build.local.
+
