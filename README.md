@@ -23,6 +23,8 @@ You should create a new bridge interface. There is an example config for [Arch L
 
 Make sure your kernel allows [IP forwarding](etc/sysctl.d/99-sysctl.conf).
 
+Apply [iptables rules](etc/iptables/iptables.rules).
+
 Edit [run.sh](run.sh). Specify containers you want to run by changing variable `NAMES`, and image they'll be created from by changing variable `IMAGE`.
 
 Build the [ubuntu-ssh image](Dockerfile). It's ubuntu with ssh! Before you can build the image, you need to create a new ssh keypair (id_docker) and use it in your [ssh config](home/.ssh/config).
