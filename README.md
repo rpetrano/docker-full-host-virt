@@ -7,6 +7,7 @@ This repo provides Docker and host configuration that makes it easier to run Doc
 
 This is intended for sysadmins, as it's takes effort to set up but makes it easy to use afterwards.
 
+Make sure to checkout a branch for a distribution specific files.
 
 Installation
 ============
