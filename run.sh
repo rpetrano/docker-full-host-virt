@@ -1,21 +1,7 @@
 #!/bin/bash
 
 IMAGE=centos-ssh
-
-NAMES=(
-	database.local
-	webserver.local
-	monitor.local
-	docs.local
-	ubuntu.local
-	tester.local
-	workers.local
-	services.local
-	build.local
-)
-
-
-
+NAMES=$(host -l local 127.0.0.1 | perl -ne '/(\S+) has address (\S+)/ && print "$1\n"')
 
 container_info() {
 	name="$1"
