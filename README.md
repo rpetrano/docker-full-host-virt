@@ -52,8 +52,6 @@ The IP addresses given to host's bridge and guests veths are determined based on
 TODO
 ====
 
- * Enable AXFR DNS queries to enable listing all domains in a  DNS zone. With this you won't need to specify container names in run.sh, and you'll have to change only one file when you want to change container definitions.
-
  * Enable running a new container whose name is not in the zone files. Create a DDNS service for it: fetch its IP via local DHCP server, and register to it to the DNS server.
 
  * Make installation easier?
