@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IMAGE=ubuntu-ssh
-NAMES=$(host -l local 127.0.0.1 | perl -ne '/(\S+) has address (\S+)/ && print "$1\n"')
+NAMES=($(host -l local 127.0.0.1 | perl -ne '/(\S+) has address (\S+)/ && print "$1\n"'))
 
 container_info() {
 	name="$1"
